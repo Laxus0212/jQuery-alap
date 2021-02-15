@@ -15,7 +15,9 @@ function init() {
         $("#jatekter div img").eq(i).attr('src', 'kep/szazalek.jpg');
         $("#jatekter div img").eq(i).attr('alt', 'kep');
         $("#jatekter div img").eq(i).attr('width', '100px');
+        
     }
+    $("#jatekter div").click(function (){$(this).fadeToggle("slow");});
     $("#jatekter div").addClass("szazalek");
     $("#jatekter div").css({"background-color": "cyan", "padding": "20px"});
    
@@ -28,6 +30,7 @@ function init() {
         function () {
         $(this).css({"background-color": "cyan", "padding": "20px"});
                     }       );
+                    
         
         
         
